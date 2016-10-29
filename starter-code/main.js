@@ -4,8 +4,21 @@ var cardOne = "queen";
 var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
+	
+function createCards() {
+	var gameBoard = document.getElementById('game-board');
 
-if (cardOne === cardTwo) {
+	for (var i = 0; i < 4; i++) {
+		var makeCard = document.createElement('div');
+		makeCard.className = 'card';
+		gameBoard.appendChild(makeCard);
+	}
+}
+
+createCards();
+	
+
+/* if (cardOne === cardTwo) {
 	alert('You found a match!');
 } 
 else {
@@ -25,4 +38,6 @@ if (cardOne === cardThree) {
 else {
 	alert('Sorry, try again.');
 }
+*/
+
 
